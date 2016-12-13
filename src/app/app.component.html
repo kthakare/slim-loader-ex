@@ -1,3 +1,22 @@
-<h1>
-  {{title}}
+
+<h1>Slim Loader
 </h1>
+
+<nav>
+  <div class="grid grid-pad">
+
+    <a routerLink="/dashboard" routerLinkActive="active" class="lg-col-12">
+      <div class=" ">Dashboard</div>
+    </a>
+    <a routerLink="/about" routerLinkActive="active" class="lg-col-12">
+      <div class=" ">AboutUs</div>
+    </a>
+
+  </div>
+</nav>
+
+<br>
+
+<ng2-slim-loading-bar></ng2-slim-loading-bar>
+
+<router-outlet></router-outlet>
