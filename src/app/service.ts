@@ -54,9 +54,31 @@ export class Service {
       .then(pages => pages.find(page => page.id === id));
   }
 
+ /* GetApplicationDetails(applicationId) {
+
+    return this.http.post(url, applicationId)
+      .map((response: Response) => {
+        let details = response.json();
+        return details;
+      })
+      .do(data => console.log(data))
+      .catch(this.handleErr);
+  }
+
+  SetApplicationFavicon(id,basepath,icon)
+  {
+    $("#"+id).attr("href", basepath+"/"+ icon);
+  }*/
+
+
   private handleError(error: any): Promise<any> {
     console.error('An error occurred', error); // for demo purposes only
     return Promise.reject(error.message || error);
   }
+
+  /*private handleErr(error: Response) {
+    console.error(error);
+    return Observable.throw(error.json().error || 'Server error');
+  }*/
 }
 

@@ -7,8 +7,29 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+<!--<link rel="shortcut icon" type="image/png" href="http://eg.com/favicon.png"/>-->
+  <!--<link rel="icon" ng-href="http://example.com/favicon.ico">-->
+  <!--<link href="/YOUR_PATH/favicon.ico" rel="icon" type="image/x-icon" />-->
+  <!--<script src="node_modules/marked/marked.min.js"></script>-->
 </head>
 <body>
   <app-root>Loading...</app-root>
 </body>
+<!--
+<script>
+  document.head || (document.head = document.getElementsByTagName('head')[0]);
+
+  function changeFavicon(src) {
+    var link = document.createElement('link'),
+      oldLink = document.getElementById('dynamic-favicon');
+    link.id = 'dynamic-favicon';
+    link.rel = 'shortcut icon';
+    link.href = src;
+    if (oldLink) {
+      document.head.removeChild(oldLink);
+    }
+    document.head.appendChild(link);
+  }
+</script>
+-->
 </html>

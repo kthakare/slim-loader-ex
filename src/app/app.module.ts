@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 
+import {MarkdownModule} from 'angular2-markdown';
+
 import { AppComponent } from './app.component';
 import { DashboardComponent }   from './dashboard.component';
 import { AboutComponent }      from './about.component';
@@ -12,19 +14,21 @@ import { DetailComponent }  from './details.component';
 import { Service }          from './service';
 import {SlimLoadingBarModule} from 'ng2-slim-loading-bar';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     AboutComponent,
-    DetailComponent
+    DetailComponent    
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     SlimLoadingBarModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    MarkdownModule
   ],
   providers: [Service],
   bootstrap: [AppComponent]
